@@ -6,10 +6,29 @@
   },
   "paths": {
     "/api/search/index": {
-      "get": {
+      "post": {
         "tags": [
           "Search"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArticleDocument"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArticleDocument"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArticleDocument"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -80,6 +99,24 @@
   },
   "components": {
     "schemas": {
+      "ArticleDocument": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "WeatherForecast": {
         "type": "object",
         "properties": {

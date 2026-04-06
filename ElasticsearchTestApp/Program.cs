@@ -1,6 +1,8 @@
 
+using Confluent.Kafka;
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
+using RabbitMQ.Client;
 
 namespace ElasticsearchTestApp
 {
@@ -23,6 +25,61 @@ namespace ElasticsearchTestApp
 
             // Клиент регистрируется как Singleton
             builder.Services.AddSingleton(new ElasticsearchClient(settings));
+
+
+            #region - Kafka produced -
+
+            builder.Services.AddSingleton(new ProducerConfig
+            {
+                BootstrapServers = "localhost:9094"
+            });
+
+            builder.Services.AddSingleton<KafkaProducerService>();
+            builder.Services.AddSingleton<ArticleKafkaProducer>();
+
+            #endregion
+
+            #region - Kafka consumer -
+
+            builder.Services.AddSingleton<IConsumer<string, string>>(_ =>
+            {
+                var config = new ConsumerConfig
+                {
+                    BootstrapServers = "localhost:9094",
+                    GroupId = "article-indexer",
+                    AutoOffsetReset = AutoOffsetReset.Earliest,
+                    EnableAutoCommit = false
+                };
+
+                return new ConsumerBuilder<string, string>(config)
+                .Build();
+            });
+
+            builder.Services.AddHostedService<KafkaToElasticHostedService>();
+
+            #endregion
+
+
+            #region - RabbitMQ -
+
+            builder.Services.AddSingleton(new ConnectionFactory
+            {
+                HostName = "localhost",
+                Port = 5672,
+                UserName = "rabbituser",
+                Password = "rabbitpassword"
+            });
+
+            builder.Services.AddSingleton<RabbitMqProducerService>();
+
+            #endregion
+
+            #region - RabbitMQ Consumer -
+
+            builder.Services.AddHostedService<RabbitMqPublisher>();
+            #endregion
+
+
 
 
             builder.Services.AddScoped<ArticleSearchService>();

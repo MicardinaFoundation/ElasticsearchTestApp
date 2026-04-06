@@ -17,12 +17,18 @@
   },
   {
     "ContainingType": "SearchController",
-    "Method": "Index",
+    "Method": "CreateArticle",
     "RelativePath": "api/search/index",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ElasticsearchTestApp.Models.ArticleDocument",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

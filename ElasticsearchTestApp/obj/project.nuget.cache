@@ -1,18 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "OarFVdxRgfs=",
+  "dgSpecHash": "bbva7wrOZf4=",
   "success": true,
   "projectFilePath": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\ElasticsearchTestApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Msk\\.nuget\\packages\\confluent.kafka\\2.14.0\\confluent.kafka.2.14.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\elastic.clients.elasticsearch\\9.3.4\\elastic.clients.elasticsearch.9.3.4.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\elastic.esql\\0.10.0\\elastic.esql.0.10.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\elastic.transport\\0.15.1\\elastic.transport.0.15.1.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\fluentnest\\6.0.271\\fluentnest.6.0.271.nupkg.sha512",
+    "C:\\Users\\Msk\\.nuget\\packages\\librdkafka.redist\\2.14.0\\librdkafka.redist.2.14.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\nest\\7.17.5\\nest.7.17.5.nupkg.sha512",
+    "C:\\Users\\Msk\\.nuget\\packages\\rabbitmq.client\\7.2.1\\rabbitmq.client.7.2.1.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
@@ -21,7 +24,8 @@
     "C:\\Users\\Msk\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\system.io.pipelines\\10.0.0\\system.io.pipelines.10.0.0.nupkg.sha512",
     "C:\\Users\\Msk\\.nuget\\packages\\system.text.encodings.web\\10.0.0\\system.text.encodings.web.10.0.0.nupkg.sha512",
-    "C:\\Users\\Msk\\.nuget\\packages\\system.text.json\\10.0.0\\system.text.json.10.0.0.nupkg.sha512"
+    "C:\\Users\\Msk\\.nuget\\packages\\system.text.json\\10.0.0\\system.text.json.10.0.0.nupkg.sha512",
+    "C:\\Users\\Msk\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
