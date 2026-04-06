@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "SUU78gk8kUcVe2pnemU9XUkeObX24ho85/GUUO0j2eI=",
+  "Source": "ElasticsearchTestApp",
+  "BasePath": "_content/ElasticsearchTestApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
