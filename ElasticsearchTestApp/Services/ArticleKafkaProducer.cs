@@ -13,7 +13,10 @@ public class ArticleKafkaProducer
 
     public async Task PublishAsync(ArticleDocument article)
     {
-        var json = JsonSerializer.Serialize(article);
+        var json = JsonSerializer.Serialize(article, new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        });
 
         await _producer.ProduceAsync("articles", new Message<string, string>
         {

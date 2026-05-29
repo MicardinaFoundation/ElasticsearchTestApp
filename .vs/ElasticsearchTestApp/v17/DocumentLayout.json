@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "E:\\VS\\ElasticsearchTestApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\rabbitmqproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\rabbitmqproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\kafkatoelastichostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\kafkatoelastichostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\articlekafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\articlekafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\models\\articledocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\models\\articledocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\articlesearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\articlesearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\rabbitmqproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\rabbitmqproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\articlekafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\articlekafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\kafkatoelastichostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\kafkatoelastichostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\articlesearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\articlesearchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|e:\\vs\\elasticsearchtestapp\\elasticsearchtestapp\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2422315-8ABA-4E4B-A4D1-BC2E6549D3EA}|ElasticsearchTestApp\\ElasticsearchTestApp.csproj|solutionrelative:elasticsearchtestapp\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,20 +46,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 498,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "RabbitMqPublisher.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\RabbitMqPublisher.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\RabbitMqPublisher.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\RabbitMqPublisher.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\RabbitMqPublisher.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwDsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T18:37:15.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T18:37:15.302Z"
             },
             {
               "$type": "Document",
@@ -69,59 +68,59 @@
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\ArticleKafkaProducer.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\ArticleKafkaProducer.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\ArticleKafkaProducer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T16:52:27.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RabbitMqProducerService.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\RabbitMqProducerService.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\RabbitMqProducerService.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\RabbitMqProducerService.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\RabbitMqProducerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T17:51:42.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "KafkaToElasticHostedService.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\KafkaToElasticHostedService.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\KafkaToElasticHostedService.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\KafkaToElasticHostedService.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\KafkaToElasticHostedService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T17:00:57.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "KafkaProducerService.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\KafkaProducerService.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\KafkaProducerService.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\KafkaProducerService.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\KafkaProducerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-06T16:28:31.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "SearchController.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Controllers\\SearchController.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Controllers\\SearchController.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Controllers\\SearchController.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Controllers\\SearchController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T10:45:07.65Z",
               "EditorCaption": ""
@@ -134,33 +133,32 @@
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Services\\ArticleSearchService.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Services\\ArticleSearchService.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Services\\ArticleSearchService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwB4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T10:42:16.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T10:42:16.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Program.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Program.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Program.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAIAwwEUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAlwE4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T10:37:23.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ArticleDocument.cs",
               "DocumentMoniker": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Models\\ArticleDocument.cs",
               "RelativeDocumentMoniker": "ElasticsearchTestApp\\Models\\ArticleDocument.cs",
               "ToolTip": "E:\\VS\\ElasticsearchTestApp\\ElasticsearchTestApp\\Models\\ArticleDocument.cs",
               "RelativeToolTip": "ElasticsearchTestApp\\Models\\ArticleDocument.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T10:35:48.834Z",
               "EditorCaption": ""
