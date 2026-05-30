@@ -26,38 +26,21 @@ namespace ElasticsearchTestApp
             // Клиент регистрируется как Singleton
             builder.Services.AddSingleton(new ElasticsearchClient(settings));
 
+            // Регистрация Kafka Producer
+            builder.Services.AddSingleton<IKafkaProducerService, KafkaProducerService>();
 
-            #region - Kafka produced -
+            //#region - Kafka produced -
 
-            builder.Services.AddSingleton(new ProducerConfig
-            {
-                BootstrapServers = "localhost:9094"
-            });
-
-            builder.Services.AddSingleton<KafkaProducerService>();
-            builder.Services.AddSingleton<ArticleKafkaProducer>();
-
-            #endregion
-
-            #region - Kafka consumer -
-
-            //builder.Services.AddSingleton<IConsumer<string, string>>(_ =>
+            //builder.Services.AddSingleton(new ProducerConfig
             //{
-            //    var config = new ConsumerConfig
-            //    {
-            //        BootstrapServers = "localhost:9094",
-            //        GroupId = "article-indexer",
-            //        AutoOffsetReset = AutoOffsetReset.Earliest,
-            //        EnableAutoCommit = false
-            //    };
-
-            //    return new ConsumerBuilder<string, string>(config)
-            //    .Build();
+            //    BootstrapServers = "localhost:9094"
             //});
 
-            //builder.Services.AddHostedService<KafkaToElasticHostedService>();
+            //builder.Services.AddSingleton<KafkaProducerService>();
+            //builder.Services.AddSingleton<ArticleKafkaProducer>();
 
-            #endregion
+            //#endregion
+
 
 
             #region - RabbitMQ -
@@ -82,7 +65,6 @@ namespace ElasticsearchTestApp
 
 
 
-            builder.Services.AddScoped<ArticleSearchService>();
 
             var app = builder.Build();
 
