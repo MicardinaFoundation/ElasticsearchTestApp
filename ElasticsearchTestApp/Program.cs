@@ -1,7 +1,10 @@
 
+using System;
 using Confluent.Kafka;
 using Elastic.Clients.Elasticsearch;
 using Elastic.Transport;
+using ElasticsearchTestApp.Data;
+using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
 
 namespace ElasticsearchTestApp
@@ -13,6 +16,11 @@ namespace ElasticsearchTestApp
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            // Подключение MariaDB
+            var connectionString = builder.Configuration.GetConnectionString("ArticleDbConnection");
+            builder.Services.AddDbContext<ArticleDbContext>(options =>
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -67,6 +75,13 @@ namespace ElasticsearchTestApp
 
 
             var app = builder.Build();
+
+            // Автоматическое создание таблицы в БД при старте приложения, если её нет
+            using (var scope = app.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<ArticleDbContext>();
+                db.Database.EnsureCreated();
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

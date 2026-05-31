@@ -1,4 +1,5 @@
 ﻿using Elastic.Clients.Elasticsearch;
+using ElasticsearchTestApp.Data;
 using ElasticsearchTestApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,14 +10,16 @@ public class ArticlesController : ControllerBase
     private readonly IKafkaProducerService _kafkaProducer;
     private readonly ElasticsearchClient _elasticClient;
     //private readonly string _elasticIndex;
+    private readonly ArticleDbContext _context;
 
     private readonly RabbitMqProducerService _rabbitMqProducer;
 
-    public ArticlesController(ElasticsearchClient service, IKafkaProducerService kafkaProducer, RabbitMqProducerService rabbitMqProducer, IConfiguration configuration)
+    public ArticlesController(ElasticsearchClient service, IKafkaProducerService kafkaProducer, RabbitMqProducerService rabbitMqProducer, IConfiguration configuration, ArticleDbContext articleDbContext)
     {
         _elasticClient = service;
         _kafkaProducer = kafkaProducer;
         _rabbitMqProducer = rabbitMqProducer;
+        _context = articleDbContext;
     }
 
 
@@ -35,8 +38,11 @@ public class ArticlesController : ControllerBase
 
         //await _rabbitMqProducer.SendAsync(request);
 
-        // Публикуем в Kafka. Приложение больше ничего не делает.
-        await _kafkaProducer.ProduceAsync(request);
+        //// Публикуем в Kafka. Приложение больше ничего не делает.
+        //await _kafkaProducer.ProduceAsync(request);
+
+        await _context.ArticleDocuments.AddAsync(request);
+        await _context.SaveChangesAsync();
 
         return Accepted(new { Message = "Статья отправлена в Apache Kafka. Индексация будет выполнена автоматически через Kafka Connect." });
     }
