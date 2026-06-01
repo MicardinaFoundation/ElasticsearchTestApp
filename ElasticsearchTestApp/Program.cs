@@ -15,6 +15,7 @@ namespace ElasticsearchTestApp
             // Add services to the container.
 
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -26,38 +27,21 @@ namespace ElasticsearchTestApp
             // Клиент регистрируется как Singleton
             builder.Services.AddSingleton(new ElasticsearchClient(settings));
 
+            // Регистрация Kafka Producer
+            builder.Services.AddSingleton<IKafkaProducerService, KafkaProducerService>();
 
-            #region - Kafka produced -
+            //#region - Kafka produced -
 
-            builder.Services.AddSingleton(new ProducerConfig
-            {
-                BootstrapServers = "localhost:9094"
-            });
+            //builder.Services.AddSingleton(new ProducerConfig
+            //{
+            //    BootstrapServers = "localhost:9094"
+            //});
 
-            builder.Services.AddSingleton<KafkaProducerService>();
-            builder.Services.AddSingleton<ArticleKafkaProducer>();
+            //builder.Services.AddSingleton<KafkaProducerService>();
+            //builder.Services.AddSingleton<ArticleKafkaProducer>();
 
-            #endregion
+            //#endregion
 
-            #region - Kafka consumer -
-
-            builder.Services.AddSingleton<IConsumer<string, string>>(_ =>
-            {
-                var config = new ConsumerConfig
-                {
-                    BootstrapServers = "localhost:9094",
-                    GroupId = "article-indexer",
-                    AutoOffsetReset = AutoOffsetReset.Earliest,
-                    EnableAutoCommit = false
-                };
-
-                return new ConsumerBuilder<string, string>(config)
-                .Build();
-            });
-
-            builder.Services.AddHostedService<KafkaToElasticHostedService>();
-
-            #endregion
 
 
             #region - RabbitMQ -
@@ -82,7 +66,6 @@ namespace ElasticsearchTestApp
 
 
 
-            builder.Services.AddScoped<ArticleSearchService>();
 
             var app = builder.Build();
 

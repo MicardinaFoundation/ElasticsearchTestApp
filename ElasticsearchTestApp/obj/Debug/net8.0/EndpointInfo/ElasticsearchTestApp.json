@@ -8,7 +8,7 @@
     "/api/search/index": {
       "post": {
         "tags": [
-          "Search"
+          "Articles"
         ],
         "requestBody": {
           "content": {
@@ -39,11 +39,11 @@
     "/api/search": {
       "get": {
         "tags": [
-          "Search"
+          "Articles"
         ],
         "parameters": [
           {
-            "name": "q",
+            "name": "query",
             "in": "query",
             "schema": {
               "type": "string"

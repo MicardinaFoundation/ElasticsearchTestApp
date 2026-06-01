@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElasticsearchTestApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b169401deaf07ea84e88904727a8beacf2f07ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7dbb1ed5f9c743aef92abd69e3190fca7109e15")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElasticsearchTestApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElasticsearchTestApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,22 +1,43 @@
-﻿using Confluent.Kafka;
-
-public class KafkaProducerService
+﻿using System.Text.Json;
+using Confluent.Kafka;
+using ElasticsearchTestApp.Models;
+public interface IKafkaProducerService
 {
-    private readonly IProducer<Null, string> _producer;
+    Task ProduceAsync(ArticleDocument article);
+}
+public class KafkaProducerService : IKafkaProducerService
+{
+    private readonly IProducer<int, string> _producer;
+    private readonly string _topicName;
 
-    public KafkaProducerService(ProducerConfig config)
+    public KafkaProducerService(IConfiguration configuration)
     {
-        _producer = new ProducerBuilder<Null, string>(config).Build();
-    }
+        _topicName = configuration["Kafka:TopicName"] ?? "articles";
 
-    public async Task ProduceAsync(string topic, string message)
-    {
-        var kafkaMessage = new Message<Null, string>
+        var config = new ProducerConfig
         {
-            Value = message
+            BootstrapServers = configuration["Kafka:BootstrapServers"] ?? "localhost:9092",
+            // Гарантия доставки сообщения на брокер
+            Acks = Acks.All
         };
 
-        await _producer.ProduceAsync(topic, kafkaMessage);
+        _producer = new ProducerBuilder<int, string>(config).Build();
+    }
+
+    public async Task ProduceAsync(ArticleDocument article)
+    {
+        var jsonValue = JsonSerializer.Serialize(article, new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+        });
+
+        var kafkaMessage = new Message<int, string>
+        {
+            Key = article.Id,
+            Value = jsonValue
+        };
+
+        await _producer.ProduceAsync(_topicName, kafkaMessage);
     }
 
 
