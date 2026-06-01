@@ -1,0 +1,32 @@
+services:
+  mariadb:
+    image: mariadb:11.2
+    container_name: mariadb
+    hostname: mariadb
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: article
+      MARIADB_USER: debezium
+      MARIADB_PASSWORD: dbz
+    command:
+      # Обязательные параметры для Debezium
+      - --server-id=223344
+      - --log-bin=mysql-bin
+      - --binlog-format=ROW
+      - --binlog-row-image=FULL
+      - --binlog-expire-logs-seconds=604800
+      - --binlog-annotate-row-events=ON
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    networks:
+      - mariadbnet
+
+volumes:
+  mariadb-data:
+
+networks:
+  mariadbnet:
+    name: mariadbnet

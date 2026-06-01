@@ -44,7 +44,7 @@ public class ArticlesController : ControllerBase
         await _context.ArticleDocuments.AddAsync(request);
         await _context.SaveChangesAsync();
 
-        return Accepted(new { Message = "Статья отправлена в Apache Kafka. Индексация будет выполнена автоматически через Kafka Connect." });
+        return Accepted(new { Message = "Статья сохранена в DB." });
     }
 
     /// <summary>
