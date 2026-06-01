@@ -1,0 +1,12 @@
+auth:
+  type: DISABLED
+kafka:
+  clusters:
+  - bootstrapServers: kafka:9092
+    name: idx
+    properties:
+      security.protocol: PLAINTEXT
+    readOnly: false
+rbac:
+  roles: []
+webclient: {}
