@@ -33,6 +33,7 @@ services:
       - "5601:5601"
     networks:
       - elastic
+      - mariadbnet
 
 volumes:
   esdata:
@@ -41,3 +42,6 @@ networks:
   elastic:
     name: elastic
     driver: bridge
+  mariadbnet:
+    name: mariadbnet
+    external: true
