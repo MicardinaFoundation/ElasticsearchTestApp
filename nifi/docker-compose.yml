@@ -1,0 +1,20 @@
+services:
+  nifi:
+    build: .
+    container_name: nifi
+    ports:
+      - "8443:8443"
+    environment:
+      - SINGLE_USER_CREDENTIALS_USERNAME=admin
+      # Минимальная длина пароля - 12 символов
+      - SINGLE_USER_CREDENTIALS_PASSWORD=password12345
+    volumes:
+      - ./nifi/drivers:/opt/nifi/nifi-current/drivers
+      - ./result:/result
+    networks:
+      - mariadbnet
+
+networks:
+  mariadbnet:
+    name: mariadbnet
+    external: true
